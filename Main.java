@@ -5,6 +5,7 @@ public class Main {
         return num1+manualMultiplicationRecursion(num1, count-1);
     }
     private static int manualDivisionRecursion(int num2, int dividedBy){
+        if (dividedBy == 0) return -1;
         if(num2<dividedBy) return 0;
         return 1+ manualDivisionRecursion(num2-dividedBy, dividedBy);
     }
